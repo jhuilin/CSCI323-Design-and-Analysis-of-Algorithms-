@@ -1,0 +1,40 @@
+listHead-->("dammny","0", "v")-->("v","1", "l")-->("l","1", "c")-->("c","1", "g")-->("g","1", "h")-->("h","1", "s")-->("s","2", "d")-->("d","3", "j")-->("j","4", "t")-->("t","5", "o")-->("o","5", "k")-->("k","6", "i")-->("i","10", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+listHead-->("c","1", "g")-->("g","1", "h")-->("h","1", "vl")-->("vl","2", "s")-->("s","2", "d")-->("d","3", "j")-->("j","4", "t")-->("t","5", "o")-->("o","5", "k")-->("k","6", "i")-->("i","10", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:vl, Node`s prob:2, Node`s next:c, Node`s left:v, Node`s right:l
+
+listHead-->("h","1", "cg")-->("cg","2", "vl")-->("vl","2", "s")-->("s","2", "d")-->("d","3", "j")-->("j","4", "t")-->("t","5", "o")-->("o","5", "k")-->("k","6", "i")-->("i","10", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:cg, Node`s prob:2, Node`s next:h, Node`s left:c, Node`s right:g
+
+listHead-->("vl","2", "s")-->("s","2", "hcg")-->("hcg","3", "d")-->("d","3", "j")-->("j","4", "t")-->("t","5", "o")-->("o","5", "k")-->("k","6", "i")-->("i","10", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:hcg, Node`s prob:3, Node`s next:vl, Node`s left:h, Node`s right:cg
+
+listHead-->("hcg","3", "d")-->("d","3", "vls")-->("vls","4", "j")-->("j","4", "t")-->("t","5", "o")-->("o","5", "k")-->("k","6", "i")-->("i","10", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:vls, Node`s prob:4, Node`s next:hcg, Node`s left:vl, Node`s right:s
+
+listHead-->("vls","4", "j")-->("j","4", "t")-->("t","5", "o")-->("o","5", "hcgd")-->("hcgd","6", "k")-->("k","6", "i")-->("i","10", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:hcgd, Node`s prob:6, Node`s next:vls, Node`s left:hcg, Node`s right:d
+
+listHead-->("t","5", "o")-->("o","5", "hcgd")-->("hcgd","6", "k")-->("k","6", "vlsj")-->("vlsj","8", "i")-->("i","10", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:vlsj, Node`s prob:8, Node`s next:t, Node`s left:vls, Node`s right:j
+
+listHead-->("hcgd","6", "k")-->("k","6", "vlsj")-->("vlsj","8", "to")-->("to","10", "i")-->("i","10", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:to, Node`s prob:10, Node`s next:hcgd, Node`s left:t, Node`s right:o
+
+listHead-->("vlsj","8", "to")-->("to","10", "i")-->("i","10", "hcgdk")-->("hcgdk","12", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:hcgdk, Node`s prob:12, Node`s next:vlsj, Node`s left:hcgd, Node`s right:k
+
+listHead-->("i","10", "hcgdk")-->("hcgdk","12", "vlsjto")-->("vlsjto","18", "e")-->("e","20", "a")-->("a","40", "NULL")-->NULL
+Node:vlsjto, Node`s prob:18, Node`s next:i, Node`s left:vlsj, Node`s right:to
+
+listHead-->("vlsjto","18", "e")-->("e","20", "ihcgdk")-->("ihcgdk","22", "a")-->("a","40", "NULL")-->NULL
+Node:ihcgdk, Node`s prob:22, Node`s next:vlsjto, Node`s left:i, Node`s right:hcgdk
+
+listHead-->("ihcgdk","22", "vlsjtoe")-->("vlsjtoe","38", "a")-->("a","40", "NULL")-->NULL
+Node:vlsjtoe, Node`s prob:38, Node`s next:ihcgdk, Node`s left:vlsjto, Node`s right:e
+
+listHead-->("a","40", "ihcgdkvlsjtoe")-->("ihcgdkvlsjtoe","60", "NULL")-->NULL
+Node:ihcgdkvlsjtoe, Node`s prob:60, Node`s next:a, Node`s left:ihcgdk, Node`s right:vlsjtoe
+
+listHead-->("aihcgdkvlsjtoe","100", "NULL")-->NULL
+Node:aihcgdkvlsjtoe, Node`s prob:100, Node`s next:aihcgdkvlsjtoe, Node`s left:a, Node`s right:ihcgdkvlsjtoe
+
