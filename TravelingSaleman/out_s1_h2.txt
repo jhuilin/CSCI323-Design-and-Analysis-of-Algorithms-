@@ -1,0 +1,6 @@
+Start from node 1 using A* search
+1	2	-1
+2	4	15
+4	3	6
+3	1	5
+The total cost of the simple-path is 25

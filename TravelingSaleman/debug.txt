@@ -1,0 +1,66 @@
+0	-1	5	18	
+-1	0	10	15	
+5	10	0	6	
+18	15	6	0	
+
+***OpenList***
+(1, 1, 0)->NULL
+
+***CloseList***
+NULL
+
+
+
+***OpenList***
+(3, 1, 25)->NULL
+
+***OpenList***
+(3, 1, 25)->(4, 1, 38)->NULL
+
+***CloseList***
+(1, 1, 0)->NULL
+
+
+
+***OpenList***
+(2, 3, 35)->(4, 1, 38)->NULL
+
+***OpenList***
+(4, 3, 31)->(2, 3, 35)->(4, 1, 38)->NULL
+
+***CloseList***
+(3, 1, 25)->(1, 1, 0)->NULL
+
+
+
+***OpenList***
+(2, 3, 35)->(4, 1, 38)->(2, 4, 46)->NULL
+
+***CloseList***
+(4, 3, 31)->(3, 1, 25)->(1, 1, 0)->NULL
+
+
+
+***CloseList***
+(4, 3, 31)->(3, 1, 25)->(1, 1, 0)->NULL
+
+
+
+***OpenList***
+(2, 4, 46)->(2, 4, 53)->NULL
+
+***CloseList***
+(4, 3, 31)->(3, 1, 25)->(1, 1, 0)->NULL
+
+
+
+***CloseList***
+(2, 4, 46)->(4, 3, 31)->(3, 1, 25)->(1, 1, 0)->NULL
+
+
+
+***CloseList***
+(2, 4, 46)->(4, 3, 31)->(3, 1, 25)->(1, 1, 0)->NULL
+
+
+ERROR: there is no path to complete Travel SalesMan Problem
